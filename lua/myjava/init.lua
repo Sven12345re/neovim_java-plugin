@@ -1,9 +1,9 @@
--- lua/myhello/init.lua
+-- lua/myjava/init.lua
 
 local M = {}
 
 function M.hello()
-  print("Hello World")
+	print("Hello World")
 end
 
 return M

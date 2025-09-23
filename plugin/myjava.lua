@@ -1,5 +1,3 @@
--- plugin/myhello.lua
+-- plugin/myjava.lua
 
-vim.api.nvim_command("HelloWorld", function()
-	require("myjava").hello()
-end, {})
+vim.api.nvim_command('command! HelloWorld lua require("myjava").hello_world()')
