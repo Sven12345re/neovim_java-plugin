@@ -1,7 +1,7 @@
 local M = {}
 
 function M.hello_world()
-  print("Hello, World!")
+  print("Hello, World2!")
 end
 
 -- Map a command to the function
