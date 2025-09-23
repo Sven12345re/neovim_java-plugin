@@ -2,7 +2,7 @@
 
 local M = {}
 
-function M.hello()
+function M.greeting()
 	print("Hello World")
 end
 
