@@ -7,7 +7,8 @@ function M.greeting()
 end
 
 function M.compileAndnRun()
-	os.execute("javac HelloWorld.java")
+  locale mainFileName = os.execute('grep -H "public static void main" *.java | cut -d: -f1')
+	os.execute(mainFileName)
 	os.execute("java HelloWorld")
 end
 
