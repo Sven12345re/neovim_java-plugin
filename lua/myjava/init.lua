@@ -11,7 +11,7 @@ function M.compileAndnRun()
 	local result = handle:read("*a") -- liest die gesamte Ausgabe
 	handle:close()
 	os.execute("javac -d class " .. result)
-	os.execute("java /class/" .. result .. "| cut -d.java -f1")
+	os.execute("java -cp class" .. result .. "| cut -d.java -f1")
 end
 
 return M
