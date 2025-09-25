@@ -7,6 +7,8 @@ function M.greeting()
 end
 
 function M.compileAndnRun()
+	io.write("\27[2J") -- Bildschirm löschen
+	io.write("\27[H") -- Cursor nach oben links setzen
 	local handle = io.popen('grep -H "public static void main" *.java | cut -d: -f1')
 	local result = handle:read("*a") -- liest die gesamte Ausgabe
 	local runString = string.gsub(result, ".java", "")
