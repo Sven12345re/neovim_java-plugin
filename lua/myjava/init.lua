@@ -12,7 +12,7 @@ function M.compileAndnRun()
 	local runString = string.gsub(result, ".java", "")
 	handle:close()
 	os.execute("javac -d class " .. result)
-	os.execute("java -cp class" .. runString)
+	os.execute("java -cp class " .. runString)
 end
 
 return M
