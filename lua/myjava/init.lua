@@ -18,7 +18,7 @@ end
 
 function OpenOutput()
 	local ns = vim.api.nvim_create_namespace("HelloWorldNS")
-	vim.api.nvim_create_user_command("HelloWorld", function()
+	vim.api.nvim_create_user_command("HelloWorld2", function()
 		local bufnr = vim.api.nvim_get_current_buf()
 		local last_line = vim.api.nvim_buf_line_count(bufnr)
 
